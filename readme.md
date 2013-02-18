@@ -5,7 +5,7 @@ Just a simple website to list links to a number of my online accounts.
 
 
 
-Completely created by Joe McCourt expect for the following:
+Completely created by Joe McCourt except for the following:
 -----------------------------------------------------------
 
 -   Top 4 icons created by <http://fairheadcreative.com>
