@@ -1,0 +1,3 @@
+[submodule "ParticleFun"]
+	path = ParticleFun
+	url = git://github.com/joemccourt/ParticleFun.git
