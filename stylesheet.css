@@ -36,6 +36,25 @@ div.page{
 	border-radius: 10px;
 }
 
+div.project {
+	height: 10em;
+	text-align: left;
+	border: 2px black solid;
+	padding: 2em;
+}
+
+div.project-left {
+	float: left;
+}
+
+div.project-right {
+	float: left;
+}
+
+div.project-title {
+	font-size: 2em;
+}
+
 div.header {  
 	font-size:5em;
 	text-align:center;
