@@ -27,7 +27,7 @@ canvas{
 div.page{
 	width:75%;
 	margin:1em auto;
-	display:block;
+	/*display:block;*/
 	text-align:center;
 	padding: 0 1em;
 	padding-bottom:1em;
@@ -38,17 +38,22 @@ div.page{
 
 div.project {
 	height: 10em;
+	width: 80%;
+	/*overflow: hidden;*/
 	text-align: left;
 	border: 2px black solid;
-	padding: 2em;
+	padding: 5%;
+	margin: 5%;
 }
 
 div.project-left {
 	float: left;
+	width: 50%;
 }
 
 div.project-right {
-	float: left;
+	float: right;
+	width: 50%;
 }
 
 div.project-title {

@@ -10,18 +10,20 @@ window.onload = JOE.main;
 JOE.displayProjects = function() {
 
 	var projectsDiv = $("#projects");
+
+	var leftDiv = $('<div class="project-left"></div>');
+	var rightDiv = $('<div class="project-right"></div>');
+
+
+	projectsDiv.append(leftDiv);
+	projectsDiv.append(rightDiv);
+
 	var projects = JOE.projects;
 	var i = 0;
 	for(var key in projects) {
 		var project = projects[key];
 
 		var newProjectDiv = $('<div class="project"></div>');
-
-		if(i%2 == 0) {
-			newProjectDiv.addClass("project-left");
-		} else {
-			newProjectDiv.addClass("project-right");
-		}
 
 		var title = $('<div class="project-title"></div>')
 		title.html(project.title);
@@ -41,11 +43,16 @@ JOE.displayProjects = function() {
 			newProjectDiv.append(playLink);
 		}
 
-
-		projectsDiv.append(newProjectDiv);
+		if(i%2 == 0) {
+			leftDiv.append(newProjectDiv);
+		} else {
+			rightDiv.append(newProjectDiv);
+		}
 
 		i++;
 	}
+
+	projectsDiv.trigger('change');
 
 };
 
