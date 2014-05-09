@@ -37,7 +37,6 @@ div.page{
 }
 
 div.project {
-	height: 10em;
 	width: 80%;
 	/*overflow: hidden;*/
 	text-align: left;
@@ -58,6 +57,18 @@ div.project-right {
 
 div.project-title {
 	font-size: 2em;
+}
+
+div.fav {
+	width: 100%;
+}
+
+div.fav-title {
+	float:left;
+}
+
+div.fav-answer {
+	float:left;
 }
 
 div.header {  
