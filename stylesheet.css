@@ -155,3 +155,8 @@ div.projecteulericon{
 	float:left;
 	margin:2em 1em;
 }
+
+a {
+	color:inherit;
+	text-decoration: none;
+}

@@ -44,23 +44,33 @@ JOE.displayProjects = function() {
 		var newProjectDiv = $('<div class="project" id="'+key+'"></div>');
 
 		var title = $('<div class="project-title"></div>')
-		title.html(project.title);
+		if(project.codeLink) {
+			var codeLink = $('<a href="'+project.codeLink+'"></a>');
+			codeLink.html(project.title);
+			title.append(codeLink);
+		} else {
+			title.html(project.title);
+		}
 		newProjectDiv.append(title);
 
 		var description = $('<div class="project-description"></div>')
 		description.html(project.description);
 		newProjectDiv.append(description);
 
-		if(project.codeLink) {
-			var codeLink = $('<a href="'+project.codeLink+'">code</a>');
-			newProjectDiv.append(codeLink);
-		}
-
 		if(project.playLink) {
-			var playLink = $('<a href="'+project.playLink+'">play</a>');
+			var playLink = $('<a href="'+project.playLink+'"></a>');
+			playLink.css({"width":"100%","height":"100%","display":"block"})
 			newProjectDiv.append(playLink);
 		}
 
+		if(project.img) {
+			newProjectDiv.css(
+				{
+					"background-image": "url('images/"+project.img+"')",
+					"background-size": "100%"
+				}
+			);
+		}
 
 		if(i%2 == 0) {
 			leftDiv.append(newProjectDiv);

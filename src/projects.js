@@ -4,7 +4,8 @@ JOE.projects = {
 		"title": "grow",
 		"description": "Experimental Cell Game",
 		"codeLink": "https://github.com/joemccourt/grow",
-		"playLink": "http://joemccourt.github.io/grow/"
+		"playLink": "http://joemccourt.github.io/grow/",
+		"img": "grow.png"
 	},
 
 	"triboid": {
