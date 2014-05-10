@@ -16,6 +16,9 @@ JOE.setProjectHeight = function() {
 		var cw = 0.75*projectDiv.width();
 		projectDiv.css({'height':cw+'px'});
 	}
+
+	console.log($("div.project-left").height());
+	$("#projects").css({'height':$("div.project-left").height()})
 };
 
 JOE.resize = function() {

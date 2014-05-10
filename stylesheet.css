@@ -36,6 +36,12 @@ div.page{
 	border-radius: 10px;
 }
 
+div.projects {
+}
+
+div.favs {
+}
+
 div.project {
 	width: 80%;
 	/*overflow: hidden;*/
@@ -60,15 +66,24 @@ div.project-title {
 }
 
 div.fav {
-	width: 100%;
+	width: 80%;
+	border: 2px black solid;
+	text-align: left;
+
+	height: 5em;
+	/*vertical-align:middle*/
+	padding: 5%;
+	margin: 5%;
 }
 
 div.fav-title {
 	float:left;
+	width: 50%;
 }
 
 div.fav-answer {
 	float:left;
+	width: 50%;
 }
 
 div.header {  
