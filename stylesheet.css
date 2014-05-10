@@ -66,24 +66,27 @@ div.project-title {
 }
 
 div.fav {
-	width: 80%;
+	width: 95%;
 	border: 2px black solid;
 	text-align: left;
 
-	height: 5em;
+	display: inline-block;
+	/*height: 5em;*/
 	/*vertical-align:middle*/
-	padding: 5%;
-	margin: 5%;
+	/*padding: 1em;*/
+	margin: 0.5em 2.5%;
 }
 
 div.fav-title {
 	float:left;
 	width: 50%;
+	height: 100%;
 }
 
 div.fav-answer {
 	float:left;
 	width: 50%;
+	height: 100%;
 }
 
 div.header {  
