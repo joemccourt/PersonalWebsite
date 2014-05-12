@@ -43,11 +43,11 @@ div.favs {
 }
 
 div.project {
-	width: 80%;
+	width: 90%;
 	/*overflow: hidden;*/
 	text-align: left;
 	border: 2px black solid;
-	padding: 5%;
+	/*padding: 5%;*/
 	margin: 5%;
 }
 
@@ -154,6 +154,13 @@ div.kongregateicon{
 div.projecteulericon{
 	float:left;
 	margin:2em 1em;
+}
+
+a.playLink {
+	display: block;
+	position: absolute;
+	width: inherit;
+	height: inherit;
 }
 
 a {

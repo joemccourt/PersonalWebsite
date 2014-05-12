@@ -14,7 +14,7 @@ JOE.setProjectHeight = function() {
 		var projectDiv = $("#"+key);
 
 		var cw = 0.75*projectDiv.width();
-		projectDiv.css({'height':cw+'px'});
+		projectDiv.css({'height':cw+'px','width':cw/0.75+'px'});
 	}
 
 	console.log($("div.project-left").height());
@@ -43,6 +43,13 @@ JOE.displayProjects = function() {
 
 		var newProjectDiv = $('<div class="project" id="'+key+'"></div>');
 
+		if(project.playLink) {
+			var playLink = $('<a href="'+project.playLink+'"></a>');
+			// playLink.css({"width":"100%","height":"100%","display":"block"})
+			playLink.addClass("playLink");
+			newProjectDiv.append(playLink);
+		}
+
 		var title = $('<div class="project-title"></div>')
 		if(project.codeLink) {
 			var codeLink = $('<a href="'+project.codeLink+'"></a>');
@@ -56,12 +63,6 @@ JOE.displayProjects = function() {
 		var description = $('<div class="project-description"></div>')
 		description.html(project.description);
 		newProjectDiv.append(description);
-
-		if(project.playLink) {
-			var playLink = $('<a href="'+project.playLink+'"></a>');
-			playLink.css({"width":"100%","height":"100%","display":"block"})
-			newProjectDiv.append(playLink);
-		}
 
 		if(project.img) {
 			newProjectDiv.css(
