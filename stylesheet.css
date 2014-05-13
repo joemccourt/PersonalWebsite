@@ -43,12 +43,22 @@ div.favs {
 }
 
 div.project {
+	/*filter: alpha(opacity=30);*/
 	width: 90%;
 	/*overflow: hidden;*/
 	text-align: left;
 	border: 2px black solid;
 	/*padding: 5%;*/
 	margin: 5%;
+}
+
+div.project-bg {	
+	opacity: 0.4;
+	background-size: 100%;
+	display: block;
+	position: absolute;
+	width: inherit;
+	height: inherit;
 }
 
 div.project-left {
@@ -62,6 +72,10 @@ div.project-right {
 }
 
 div.project-title {
+	font-size: 2em;
+}
+
+div.section-text {
 	font-size: 2em;
 }
 

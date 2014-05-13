@@ -43,6 +43,16 @@ JOE.displayProjects = function() {
 
 		var newProjectDiv = $('<div class="project" id="'+key+'"></div>');
 
+		if(project.img) {
+			var bgDiv = $('<div class="project-bg"></div>');
+			bgDiv.css(
+				{
+					"background-image": "url('images/"+project.img+"')",
+				}
+			);
+			newProjectDiv.append(bgDiv);
+		}
+
 		if(project.playLink) {
 			var playLink = $('<a href="'+project.playLink+'"></a>');
 			// playLink.css({"width":"100%","height":"100%","display":"block"})
@@ -63,15 +73,6 @@ JOE.displayProjects = function() {
 		var description = $('<div class="project-description"></div>')
 		description.html(project.description);
 		newProjectDiv.append(description);
-
-		if(project.img) {
-			newProjectDiv.css(
-				{
-					"background-image": "url('images/"+project.img+"')",
-					"background-size": "100%"
-				}
-			);
-		}
 
 		if(i%2 == 0) {
 			leftDiv.append(newProjectDiv);
