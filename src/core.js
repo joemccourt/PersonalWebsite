@@ -25,6 +25,15 @@ JOE.resize = function() {
 	JOE.setProjectHeight();
 };
 
+JOE.setOpacitySelected = function() {
+
+	$("div.project-bg",this).css({"opacity": 0.7});
+};
+
+JOE.setOpacityDeselected = function() {
+	$("div.project-bg",this).css({"opacity": 0.3});
+};
+
 JOE.displayProjects = function() {
 
 	var projectsDiv = $("#projects");
@@ -61,18 +70,18 @@ JOE.displayProjects = function() {
 		}
 
 		var title = $('<div class="project-title"></div>')
-		if(project.codeLink) {
-			var codeLink = $('<a href="'+project.codeLink+'"></a>');
-			codeLink.html(project.title);
-			title.append(codeLink);
-		} else {
-			title.html(project.title);
-		}
+		title.html(project.title);
 		newProjectDiv.append(title);
 
 		var description = $('<div class="project-description"></div>')
-		description.html(project.description);
+		description.html(project.description + " ");
+		if(project.codeLink) {
+			var codeLink = $('<a href="'+project.codeLink+'">(code)</a>');
+			description.append(codeLink);
+		}
 		newProjectDiv.append(description);
+
+		newProjectDiv.hover(JOE.setOpacitySelected, JOE.setOpacityDeselected);
 
 		if(i%2 == 0) {
 			leftDiv.append(newProjectDiv);
