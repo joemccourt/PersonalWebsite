@@ -14,10 +14,11 @@ JOE.setProjectHeight = function() {
 		var projectDiv = $("#"+key);
 
 		var cw = 0.75*projectDiv.width();
-		projectDiv.css({'height':cw+'px','width':cw/0.75+'px'});
+		var pcw = $("div.project-left").width();
+		projectDiv.css({'height':cw+'px','width':pcw*0.90+'px'});
 	}
 
-	console.log($("div.project-left").height());
+	// console.log($("div.project-left").height());
 	$("#projects").css({'height':$("div.project-left").height()})
 };
 
@@ -69,9 +70,10 @@ JOE.displayProjects = function() {
 			newProjectDiv.append(playLink);
 		}
 
-		var title = $('<div class="project-title"></div>')
+		var content = $('<div class="project-content"></div>');
+		var title = $('<div class="project-title"></div>');
 		title.html(project.title);
-		newProjectDiv.append(title);
+		content.append(title);
 
 		var description = $('<div class="project-description"></div>')
 		description.html(project.description + " ");
@@ -79,8 +81,9 @@ JOE.displayProjects = function() {
 			var codeLink = $('<a href="'+project.codeLink+'">(code)</a>');
 			description.append(codeLink);
 		}
-		newProjectDiv.append(description);
+		content.append(description);
 
+		newProjectDiv.append(content);
 		newProjectDiv.hover(JOE.setOpacitySelected, JOE.setOpacityDeselected);
 
 		if(i%2 == 0) {

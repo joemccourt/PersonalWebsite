@@ -2,7 +2,7 @@ JOE.projects = {
 
 	"grow": {
 		"title": "grow",
-		"description": "Experimental Cell Game",
+		"description": "Experimental cell based game",
 		"codeLink": "https://github.com/joemccourt/grow",
 		"playLink": "http://joemccourt.github.io/grow/",
 		"img": "grow.png"
@@ -10,7 +10,7 @@ JOE.projects = {
 
 	"triboid": {
 		"title": "Triboid",
-		"description": "Visual Experiment",
+		"description": "Visual experiment",
 		"codeLink": "https://github.com/joemccourt/triboid",
 		"playLink": "http://joemccourt.github.io/triboid/",
 		"img": "triboid.png"

@@ -7,12 +7,12 @@ JOE.favs = {
 	
 	"lego": {
 		"title": "Favorite Lego:",
-		"answer": "4x2 Brick.  One of the most structurally sound and important of Lego Bricks."
+		"answer": "4x2 Brick"
 	},
 
 	"startrek": {
-		"title": "Favorite Star Trek Series in decending order:",
-		"answer": "TNG > TOS > DS9 > VOY > ENT"
+		"title": "Favorite Star Trek Series best to worst:",
+		"answer": "TNG > TOS > DS9 >> VOY >> ENT"
 	},
 
 	"number": {
@@ -20,19 +20,24 @@ JOE.favs = {
 		"answer": "e"
 	},
 
+	"vowel": {
+		"title": "Favorite Mid-central Vowel:",
+		"answer": "ə"
+	},
+
 	"webcomics": {
 		"title": "Favorite Webcomics:",
-		"answer": "XKCD, Abstruse Goose, SMBC, Exocomics"
+		"answer": "<a href='http://xkcd.com/'>XKCD</a>, <a href='http://abstrusegoose.com/'>Abstruse Goose</a>, <a href='http://www.smbc-comics.com/'>SMBC</a>, <a href='http://www.exocomics.com/'>Exocomics</a>"
 	},
 
 	"anime": {
 		"title": "Favorite Anime:",
-		"answer": "http://myanimelist.net/animelist/crazyjoe"
+		"answer": "<a href='http://myanimelist.net/animelist/crazyjoe'>See list for details</a>"
 	},
 
 	"fractal": {
 		"title": "Favorite Fractal:",
-		"answer": "Sierpinski Triangle.  If it's not yours see this page: http://www.oftenpaper.net/sierpinski.htm"
+		"answer": "Sierpinski Triangle.  If it's not yours see <a href=' http://www.oftenpaper.net/sierpinski.htm'>this page</a>"
 	},
 
 	"videogames": {
