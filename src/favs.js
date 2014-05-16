@@ -7,12 +7,22 @@ JOE.favs = {
 	
 	"lego": {
 		"title": "Favorite Lego:",
-		"answer": "4x2 Brick"
+		"answer": "Tie between <a href='https://www.flickr.com/photos/crazyjoe/sets/72157622066727367/'>4x2 Brick</a>, and <a href='https://www.flickr.com/photos/crazyjoe/sets/72157600045594643/'>2x2 Brick</a>"
+	},
+
+	"language": {
+		"title": "Favorite Programming Language:",
+		"answer": "JavaScript"
 	},
 
 	"startrek": {
 		"title": "Favorite Star Trek Series best to worst:",
 		"answer": "TNG > TOS > DS9 >> VOY >> ENT"
+	},
+
+	"platform": {
+		"title": "Favorite platform to develop on",
+		"answer": "Web"
 	},
 
 	"number": {
@@ -45,9 +55,9 @@ JOE.favs = {
 		"answer": "Starcraft, Katamari Damacy, Braid, Minecraft, SimCity, Kingdom of Loathing, Half-Life"
 	},
 
-	"texteditor": {
-		"title": "Favorite Text Editor:",
-		"answer": "Sublime Text"
+	"ide": {
+		"title": "Favorite dev environments from best to worst:",
+		"answer": "Sublime Text >> Xcode > Android Studio > Visual Studio > Eclipse"
 	},
 
 	"drinks": {
